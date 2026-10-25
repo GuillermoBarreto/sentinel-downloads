@@ -1,30 +1,35 @@
-# Sentinel for Windows
+# Sentinel — Data-center operations preview
 
-Official early-access installers and checksums for Sentinel. No Python or developer tools are needed to install the application.
+Public installers, collectors, documentation and checksums. The development repository remains private.
 
-## Download and install
+**[Download Sentinel for Windows](https://github.com/GuillermoBarreto/sentinel-downloads/releases/download/v0.5.0-preview/Sentinel-Setup.exe)** · **[Release notes](https://github.com/GuillermoBarreto/sentinel-downloads/releases/tag/v0.5.0-preview)** · **[Website](https://sentinel-landing-wine.vercel.app)**
 
-1. Download **Sentinel-Setup.exe** from [Releases](https://github.com/GuillermoBarreto/sentinel-downloads/releases).
-2. Run the installer for your Windows account.
-3. Open **Sentinel** from the Desktop or Start menu.
+## Install
 
-Windows 10/11 x64. Microsoft WebView2 is installed if missing; that step needs internet. Existing Python-based Sentinel workspaces are copied into the new per-user data location on first launch, leaving the original intact.
+1. Download Sentinel-Setup.exe for Windows 10/11 x64.
+2. Verify its [SHA-256 checksum](https://github.com/GuillermoBarreto/sentinel-downloads/releases/download/v0.5.0-preview/Sentinel-Setup.exe.sha256), then run setup for your Windows account.
+3. Open **Sentinel** from the Desktop or Start menu. Python is included; setup installs WebView2 if missing, requiring internet.
 
-The preview installer is currently unsigned. Windows may show an unknown-publisher warning. Verify the release source and SHA-256 checksum before deciding whether to install.
+Version **0.5.0-preview** is unsigned early-access software. Keep endpoint protection enabled and investigate any detection with your security provider. Installation preserves the existing workspace; back it up before upgrading.
 
-## Included
+## What you can evaluate
 
-- Live CPU, RAM, GPU, storage, process and network metrics where supported.
-- Bounded local-network discovery with clear neighbor-cache states.
-- Actual Windows security health and reviewed Defender/DISM/SFC action controls.
-- Native app window, per-install local credentials, and an uninstaller that preserves personal workspace data.
+- Site, room and rack inventory, missing/stale coverage and metric history.
+- Confirmed threshold alerts and operator acknowledgement.
+- An explicitly labeled synthetic sample environment.
+- Read-only host and configured Redfish collectors.
+- Windows performance, network visibility, security-health and reviewed support tools.
 
-This is early-access software, not a finished commercial antivirus. The separate AI investigation workspace still uses a mock provider. Windows security actions can alter files and require explicit native confirmation; elevated workflows need additional disposable-system validation. Zero known threat records or a successful command exit is not proof a PC is clean or fully repaired.
+The Windows console owns a local API bound to loopback. **Remote site collectors need a separately deployed HTTPS control plane, organization credentials and registered assets.** No hosted monitoring account or connected equipment is supplied by this download.
 
-System readings stay local. Defender and Windows tools retain their own cloud, update and remediation policies. See the app's About & privacy page.
+Download [Sentinel-Collector.zip](https://github.com/GuillermoBarreto/sentinel-downloads/releases/download/v0.5.0-preview/Sentinel-Collector.zip) and read [SETUP.md](SETUP.md) before configuring equipment. The collector needs Python and its pinned dependency. Redfish uses a read-only account and verified TLS; no subnet discovery or device-changing commands are included.
 
-This repository distributes preview installers, documentation and checksums. It does not contain the private development repository. Third-party notices are included with the application.
+## Preview boundaries
 
-## Help
+This is not a production DCIM/NMS/BMS platform, an antivirus replacement, or an autonomous AI defender. SNMPv3, hypervisor integrations, paging, production retention, signed updates and broader hardware validation remain future work. No bundled local AI runtime or autonomous repairs are shipped. Optional Muse support requires explicit consent and separate provider access; provider quota and paid inference were not verified for this release.
 
-Use this repository's issues for feedback. Do not upload credentials, private files, threat resource paths, MAC addresses or unredacted system logs.
+Desktop data stays in its configured local workspace. Site collectors send normalized measurements to your configured control plane. Optional cloud support may send the summary you explicitly approve. Windows tools keep their own cloud and remediation policies.
+
+## Feedback
+
+Use [issues](https://github.com/GuillermoBarreto/sentinel-downloads/issues) for feedback. Never upload credentials, private files, device addresses or unredacted logs. Third-party notices are included in the application.
