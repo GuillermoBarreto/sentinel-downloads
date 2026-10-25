@@ -2,7 +2,7 @@
 
 Public installers, collectors, documentation and checksums. The development repository remains private.
 
-**[Download Sentinel for Windows](https://github.com/GuillermoBarreto/sentinel-downloads/releases/download/v0.5.0-preview/Sentinel-Setup.exe)** · **[Release notes](https://github.com/GuillermoBarreto/sentinel-downloads/releases/tag/v0.5.0-preview)** · **[Website](https://sentinel-landing-wine.vercel.app)**
+**[Download Sentinel for Windows](https://github.com/GuillermoBarreto/sentinel-downloads/releases/download/v0.5.0-preview/Sentinel-Setup.exe)** · **[Release notes](https://github.com/GuillermoBarreto/sentinel-downloads/releases/tag/v0.5.0-preview)** · **[Website](https://sentinel-datacenter.vercel.app)**
 
 ## Install
 
