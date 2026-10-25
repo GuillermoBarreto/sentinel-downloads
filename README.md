@@ -32,4 +32,6 @@ Desktop data stays in its configured local workspace. Site collectors send norma
 
 ## Feedback
 
-Use [issues](https://github.com/GuillermoBarreto/sentinel-downloads/issues) for feedback. Never upload credentials, private files, device addresses or unredacted logs. Third-party notices are included in the application.
+The preview is free to download and evaluate; no subscription or checkout is active.
+
+[Share early-access feedback](https://github.com/GuillermoBarreto/sentinel-downloads/issues/new?template=early-access-feedback.yml) about installation, readings, workflows or missing capabilities. A GitHub account is required and feedback is public. Never upload credentials, private files, device addresses or unredacted logs. Third-party notices are included in the application.
